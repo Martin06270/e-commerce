@@ -1,10 +1,14 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client"
+
+import Link from "next/link";
+import link from "next/link"
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-     
+    <main>
+      <Link href="/">Home</Link>
+     <Link href="/cv">cv</Link>
+     <Link href="/contact">Contact</Link>
     </main>
   );
 }
